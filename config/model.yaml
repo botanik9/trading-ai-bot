@@ -1,0 +1,16 @@
+# Гиперпараметры модели
+model:
+  name: LSTM
+  input_size: 64
+  hidden_size: 128
+  num_layers: 2
+  dropout: 0.2
+  output_size: 3  # [buy, hold, sell]
+
+training:
+  batch_size: 128
+  learning_rate: 0.0005
+  epochs: 30
+  optimizer: adam
+  loss_function: cross_entropy
+  validation_split: 0.2

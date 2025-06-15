@@ -1,0 +1,10 @@
+# Пути к важным директориям
+base_dir: /home/trading/trading-ai-bot
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  live_buffer: data/live_buffer
+  models: model/checkpoints
+  logs: logs/runtime_logs
+  feature_registry: features/feature_registry.json

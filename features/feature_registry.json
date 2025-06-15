@@ -1,0 +1,8 @@
+{
+  "features": {
+    "1d": ["close_1d", "sma_14_1d", "rsi_14_1d"],
+    "4h": ["close_4h", "sma_14_4h", "rsi_14_4h"],
+    "1h": ["close_1h", "sma_14_1h", "rsi_14_1h"],
+    "15m": ["close_15m", "sma_14_15m", "rsi_14_15m"]
+  }
+}

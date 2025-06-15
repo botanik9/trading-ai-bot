@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+env/
+cryptoai-env/
+*.pt
+logs/
+data/live_buffer/
