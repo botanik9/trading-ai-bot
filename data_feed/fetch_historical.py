@@ -46,7 +46,7 @@ def save_klines_to_csv(klines, filename):
 
 def main():
     end_dt = datetime.utcnow()
-    start_dt = end_dt - timedelta(days=365)
+    start_dt = end_dt - timedelta(days=365 * 3)  # ⬅️ 3 года назад
     os.makedirs(DATA_DIR, exist_ok=True)
 
     for interval in INTERVALS:
@@ -55,7 +55,7 @@ def main():
         print(f"Fetching {SYMBOL} {interval} klines from {start_dt} to {end_dt}")
 
         klines = fetch_klines(SYMBOL, interval, start_ts, end_ts)
-        filename = os.path.join(DATA_DIR, f"{SYMBOL}_{interval}_1year.csv")
+        filename = os.path.join(DATA_DIR, f"{SYMBOL}_{interval}_3year.csv")
         save_klines_to_csv(klines, filename)
         print(f"Saved {len(klines)} records to {filename}")
 
