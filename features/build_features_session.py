@@ -10,7 +10,7 @@ from tech_indicators_session import (
 # Установим базовые пути
 BASE_DIR = os.path.dirname(__file__)
 RAW_DATA_DIR = os.path.join(BASE_DIR, "../data/raw")
-PROCESSED_DATA_PATH = os.path.join(BASE_DIR, "../data/processed/processed_features.csv")
+PROCESSED_DATA_PATH = os.path.join(BASE_DIR, "../data/processed/processed_features_ind_session.csv")
 
 # Загружаем и обрабатываем данные для 4h
 tf = "4h"
